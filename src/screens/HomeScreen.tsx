@@ -32,7 +32,7 @@ export default function HomeScreen() {
       const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`);
       setCharacters(response.data.results);
     } catch (error) {
-      console.error('Erro ao buscar personagens', error);
+      console.error('Erro ao buscar personagem', error);
     }
   };
 
